@@ -1,0 +1,198 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+}
+
+.header {
+  width: auto;
+}
+
+.header p {
+  text-align: center;
+}
+
+.topbanner {
+  display: flex;
+  justify-content: center;
+  background-color: #1c2332;
+  padding: 1rem;
+}
+
+.topbanner a {
+  color: #4dd0ea;
+}
+
+.apptitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.appdescription {
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+
+.link {
+  font-weight: 500;
+  color: #4dd0ea;
+}
+
+.textarea {
+  resize: none;
+  font-size: 1.1rem;
+  font-family: var(--font-mono);
+  overflow: hidden;
+  padding: 1rem 1rem 1rem 1.5rem;
+  width: 35rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: none;
+  line-height: 1;
+  white-space: nowrap;
+  background: #1c2332;
+  color: snow;
+  outline: none;
+}
+
+.textarea:focus {
+  box-shadow: 0 0 0 1px #276572;
+}
+
+.textarea::placeholder {
+  color: rgb(145, 139, 139);
+}
+
+.textarea:hover {
+  opacity: 0.9;
+}
+
+.generatebuttonroot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.generatebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  margin: 1rem;
+  width: 10rem;
+  border-radius: 1.5rem;
+  font-size: 1.25rem;
+  background: linear-gradient(90deg, #67c464, #4fc2d8, #3f91a2, #2a9fb7);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  border: 1px solid rgb(71, 68, 68);
+  color: snow;
+}
+
+.generatebutton:hover {
+  opacity: 0.9;
+}
+
+.generatebutton:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 4rem 0;
+  flex-direction: column;
+}
+
+.cloud {
+  width: 50rem;
+  height: 40rem;
+  margin: 2rem;
+  background: #1c2332;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingwheel {
+  color: #4ce2a0;
+  position: absolute;
+  z-index: 1;
+}
+
+.loadingview {
+  text-align: center;
+}
+
+.loadingview p {
+  color: rgb(145, 139, 139);
+  margin: 1rem;
+}
+
+.pointsnormal {
+  width: 90%;
+  height: 90%;
+}
+
+.pointsdim {
+  width: 90%;
+  height: 90%;
+  opacity: 0.25;
+}
+
+.videoplayer {
+  width: 85%;
+  height: 85%;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 600px) {
+
+  .main {
+    padding: 3rem;
+  }
+
+  .cloud {
+    width: 21rem;
+    height: 16.8rem;
+  }
+  .textarea {
+    width: 21rem;
+    height: 3rem;
+  }
+  .header {
+    width: 20rem;
+  }
+  .topbanner {
+    font-size: 0.8rem;
+    padding: 0.75rem;
+  }
+  .apptitle {
+    font-size: 2rem;
+  }
+  .appdescription {
+    font-size: 1rem;
+  }
+}
